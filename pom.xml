@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>fhbfiwien</groupId>
-    <artifactId>Software ProjectFTSS26Z</artifactId>
+    <artifactId>software-project-ftss26z</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
@@ -21,8 +21,6 @@
             <version>1.18.42</version>
             <scope>provided</scope>
         </dependency>
-
-
-    </dependencies>
+         </dependencies>
 
 </project>
