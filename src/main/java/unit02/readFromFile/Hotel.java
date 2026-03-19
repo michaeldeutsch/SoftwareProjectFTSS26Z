@@ -11,4 +11,7 @@ public class Hotel {
     String name;
     int post_code;
 
+    public String toCSV() {
+        return id+","+name+","+post_code;
+    }
 }
