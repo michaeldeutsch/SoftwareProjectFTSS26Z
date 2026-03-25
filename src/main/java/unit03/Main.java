@@ -1,3 +1,5 @@
+package unit03;
+
 import unit02.readFromFile.Hotel;
 
 import javax.swing.*;
@@ -21,6 +23,8 @@ public class Main {
         Hotel hotel1 = new Hotel(1,"Sacher",1010  );
         Hotel hotel2 = new Hotel(2,"One",1010  );
         Hotel hotel3 = new Hotel(3,"H2",1010  );
+        System.out.println(hotel1);
+        // 1,Sacher,1010
 
         ArrayList<Hotel> hotels = new ArrayList<>();
         hotels.add(hotel1);
