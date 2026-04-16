@@ -24,11 +24,20 @@ The project follows a **standard Maven-based Java structure**.
 src
  └─ main
      ├─ java
-     │   └─ unit01
-     │       ├─ HelloWorld.java
-     │       ├─ Person.java
-     │       ├─ ReadByScanner.java
-     │       └─ ReadFromFile.java
+     │   ├─ unit01
+     │   │   ├─ HelloWorld.java
+     │   │   ├─ Person.java
+     │   │   ├─ ReadByScanner.java
+     │   │   └─ ReadFromFile.java
+     │   ├─ unit02
+     │   │   ├─ lombok
+     │   │   └─ readFromFile
+     │   ├─ unit03
+     │   │   └─ Main.java (CSV Export)
+     │   └─ unit04
+     │       ├─ exercise (Hotel SQL Assignment)
+     │       ├─ gui (Swing Login)
+     │       └─ structure (Sets, Sorting)
      └─ resources
 ```
 
@@ -38,27 +47,38 @@ Each unit contains the examples and experiments from the corresponding lecture s
 
 ## Current Contents
 
-The current examples cover the initial setup and basic concepts:
+The repository covers the progress of the course with a focus on practical application and clean code:
 
-- Java project setup
-- IntelliJ IDEA introduction
-- Maven project structure
-- Lombok usage
-- simple data models
-- reading files using Scanner
-- basic data parsing and object creation
+### Unit 01: Basics & Setup
+- **Focus:** Java project setup, IntelliJ IDEA introduction, Maven structure.
+- **Outcomes:** First Java programs, reading data from console and files using `Scanner`.
+
+### Unit 02: Advanced Git & Lombok
+- **Focus:** Advanced Git workflows (branching, merging), reducing boilerplate code with Lombok.
+- **Outcomes:** Efficient data modeling using `@Data` and `@Builder`, integration of external libraries via Maven.
+
+### Unit 03: Collections & File Export
+- **Focus:** Working with `ArrayList`, Java Time API, and structured file export.
+- **Outcomes:** Exporting object data to CSV files, handling dates and times in Java, basic UI feedback via `JOptionPane`.
+
+### Unit 04: GUI, Sorting & Assignment
+- **Focus:** Introduction to GUI development (Swing), advanced data structures (Sets), and sorting objects.
+- **Outcomes:** Simple Login GUI, implementation of `Comparable` for custom sorting, SQL export utility as a practical exercise.
 
 ---
 
 ## Technologies
 
-The course currently uses the following technologies:
+The course uses the following technologies and libraries:
 
-- Java
-- Maven
-- IntelliJ IDEA
-- Lombok
-- Git
+- **Language:** Java
+- **Build Tool:** Maven
+- **IDE:** IntelliJ IDEA
+- **VCS:** Git
+- **Libraries:**
+    - Lombok (Code simplification)
+    - Java Swing (GUI)
+    - Java Time API (Date & Time)
 
 ---
 
