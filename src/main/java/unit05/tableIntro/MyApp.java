@@ -1,4 +1,4 @@
-package unit05;
+package unit05.tableIntro;
 
 public class MyApp {
     static void main() {

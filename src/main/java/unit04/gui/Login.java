@@ -1,6 +1,7 @@
 package unit04.gui;
 
 import javax.swing.*;
+import javax.swing.event.CaretListener;
 import java.awt.*;
 
 public class Login extends JFrame {
@@ -23,7 +24,7 @@ public class Login extends JFrame {
 
          panel.add(new JLabel("Username:"));
          panel.add(username);
-        panel.add(new JLabel("Username:"));
+        panel.add(new JLabel("Password:"));
         panel.add(password);
         panel.setBorder(BorderFactory.createEmptyBorder(10,10,10,10)); // cheat
          add(panel,BorderLayout.CENTER);
@@ -50,26 +51,30 @@ public class Login extends JFrame {
              // senior senior -> seniorWindow
              // admin admin ->  AdminWindow
 
-             if(username.getText().equals("junior") && password.getText().equals("junior")){
+             if(username.getText().equals("junior") && new String(password.getPassword()).equals("junior")){
                  new JuniorWindow().setVisible(true);
                  dispose();
                  return;
-             }else if(username.getText().equals("senior") && password.getText().equals("senior")){
+             }else if(username.getText().equals("senior") && new String(password.getPassword()).equals("senior")){
                  new SeniorWindow().setVisible(true);
-             } else if (username.getText().equals("admin") && password.getText().equals("admin")) {
+                 dispose();
+             } else if (username.getText().equals("admin") && new String(password.getPassword()).equals("admin")) {
                  new AdminWindow().setVisible(true);
+                 dispose();
              }
                 else{
                     JOptionPane.showMessageDialog(this, "Invalid username or password");
              }
          });
 
-        username.addCaretListener(e -> {
-            System.out.println("something was entered");
-        });
+        loginButton.setEnabled(false);
 
+        CaretListener validation = e -> {
+            boolean isValid = username.getText().length() >= 5 && password.getPassword().length >= 5;
+            loginButton.setEnabled(isValid);
+        };
 
+        username.addCaretListener(validation);
+        password.addCaretListener(validation);
     }
-
-
 }

@@ -1,4 +1,4 @@
-package unit05;
+package unit05.tableIntro;
 
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
@@ -13,15 +13,12 @@ public class TableExample extends JFrame {
         setDefaultCloseOperation(EXIT_ON_CLOSE);
 
         JTable table = new JTable();
+
         DefaultTableModel model = new DefaultTableModel();
         table.setModel(model);
         add(new JScrollPane(table), BorderLayout.CENTER);
 
         fillTable(model);
-
-        //   model.addRow(new String[]{"Hans", 11, "Male"});
-
-
 
 
 
