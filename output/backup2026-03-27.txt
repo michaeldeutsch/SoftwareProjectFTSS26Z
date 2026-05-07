@@ -1,0 +1,3 @@
+INSERT INTO hotel (id, name, zip_code) VALUES (1, 'H1', 1010)
+INSERT INTO hotel (id, name, zip_code) VALUES (2, 'H2', 1010)
+INSERT INTO hotel (id, name, zip_code) VALUES (3, 'H3', 1010)
