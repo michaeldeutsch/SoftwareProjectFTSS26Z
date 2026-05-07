@@ -5,7 +5,7 @@ import java.util.Collections;
 
 public class SortingOfObjects {
 
-    static void main() {
+    public static void main(String[] args) {
 
         Student s = new Student("Hans", 111, 1.5);
         Student s1 = new Student("Gretel", 111, 3.5);

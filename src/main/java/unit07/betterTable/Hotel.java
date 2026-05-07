@@ -1,14 +1,13 @@
-package unit06;
+package unit07.betterTable;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
 @Data
-@NoArgsConstructor
 @AllArgsConstructor
 public class Hotel {
     private int id;
     private String name;
     private String adresse;
-    private String category;
+    private String kategorie;
 }

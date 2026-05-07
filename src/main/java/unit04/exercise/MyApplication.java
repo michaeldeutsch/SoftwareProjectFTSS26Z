@@ -5,7 +5,7 @@ import java.io.IOException;
 public class MyApplication {
 
 
-    static void main() throws IOException {
+    public static void main(String[] args) throws IOException {
 
 
             HotelUtility.writeHotelsAsSQL(false);

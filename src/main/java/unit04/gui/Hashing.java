@@ -1,7 +1,7 @@
 package unit04.gui;
 
 public class Hashing {
-    static void main() {
+    public static void main(String[] args) {
 
 
         String password = "Somefancypassword";

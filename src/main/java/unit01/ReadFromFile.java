@@ -2,7 +2,7 @@ package unit01;
 
 public class ReadFromFile {
 
-    static void main() {
+    public static void main(String[] args) {
 
 Person p = new Person(1,"","","","adsf","sdf","","","","");
 Person pp = new Person(2,"af","");

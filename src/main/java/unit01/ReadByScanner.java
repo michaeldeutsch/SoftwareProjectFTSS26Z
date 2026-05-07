@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class ReadByScanner {
 
-    static void main() throws FileNotFoundException {
+    public static void main(String[] args) throws FileNotFoundException {
 
         String path = "src/main/resources/name.txt";
 

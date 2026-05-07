@@ -1,8 +1,5 @@
 package unit06;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-
 import javax.swing.table.AbstractTableModel;
 import java.util.ArrayList;
 

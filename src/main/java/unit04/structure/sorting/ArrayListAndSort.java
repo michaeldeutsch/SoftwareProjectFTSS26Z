@@ -5,7 +5,7 @@ import java.util.Collections;
 
 public class ArrayListAndSort {
 
-    static void main() {
+    public static void main(String[] args) {
 
         System.out.println((int) 'A');
         System.out.println((int) 'Z');

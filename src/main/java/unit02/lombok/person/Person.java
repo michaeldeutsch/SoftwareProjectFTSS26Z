@@ -1,9 +1,10 @@
 package unit02.lombok.person;
-
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
+@NoArgsConstructor
 @AllArgsConstructor
 public class Person {
 
@@ -19,5 +20,4 @@ public class Person {
     String  fax;
     String  description;
     String newElement;
-
 }

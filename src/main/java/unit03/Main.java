@@ -16,7 +16,7 @@ import java.util.ArrayList;
 public class Main {
 
 
-    static void main() throws IOException {
+    public static void main(String[] args) throws IOException {
 
         // data - beginn
 

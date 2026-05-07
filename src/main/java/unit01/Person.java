@@ -1,20 +1,15 @@
 package unit01;
-
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NonNull;
-import lombok.RequiredArgsConstructor;
+import lombok.NoArgsConstructor;
 
 @Data
+@NoArgsConstructor
 @AllArgsConstructor
-@RequiredArgsConstructor
 public class Person {
 
-    @NonNull
     int id;
-    @NonNull
     String name;
-    @NonNull
     String email;
     String password;
     String phone;
@@ -24,5 +19,9 @@ public class Person {
     String zip;
     String asdasfd;
 
-
+    public Person(int id, String name, String email) {
+        this.id = id;
+        this.name = name;
+        this.email = email;
+    }
 }

@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 public class Main {
 
-    static void main() throws FileNotFoundException {
+    public static void main(String[] args) throws FileNotFoundException {
 
         ArrayList<Hotel> hotels = getHotels();
 

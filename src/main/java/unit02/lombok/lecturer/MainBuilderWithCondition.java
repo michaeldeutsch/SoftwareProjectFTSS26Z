@@ -3,7 +3,7 @@ package unit02.lombok.lecturer;
 public class MainBuilderWithCondition
 {
 
-    static void main() {
+    public static void main(String[] args) {
         String optionalFIeld = "Something is inside";
 
         var person = Lecturer.builder().name("asdf").id(1);

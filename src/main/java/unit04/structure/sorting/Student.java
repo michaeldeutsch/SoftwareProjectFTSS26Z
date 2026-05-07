@@ -1,22 +1,18 @@
 package unit04.structure.sorting;
-
 import lombok.AllArgsConstructor;
 import lombok.Data;
-
-import java.util.ArrayList;
-import java.util.Collections;
+import lombok.NoArgsConstructor;
 
 @Data
+@NoArgsConstructor
 @AllArgsConstructor
 public class Student implements Comparable<Student> {
-
 
     String name;
     int age;
     double gpa;
 
-
-       @Override
+    @Override
     public int compareTo(Student o) {
 
         if(o.age == this.age){

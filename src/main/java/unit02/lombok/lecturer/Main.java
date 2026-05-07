@@ -2,7 +2,7 @@ package unit02.lombok.lecturer;
 
 public class Main {
 
-    static void main() {
+    public static void main(String[] args) {
 
         Lecturer l = Lecturer.builder().name("Lecturer").build();
         Lecturer l2 = Lecturer.builder().name("John").id(1).build();

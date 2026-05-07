@@ -2,7 +2,7 @@ package unit06;
 
 public class MyApp {
 
-    static void main() {
+    public static void main(String[] args) {
         new MainFrame().setVisible(true);
     }
 }
